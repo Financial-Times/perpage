@@ -6,7 +6,7 @@
     "files": "find . -name '*.js' ! -path './node_modules/*' ! -path './bower_components/*' ! -path './lib/*'",
     "build": "mkdir -p lib && browserify src/perpage.js -t babelify --outfile lib/perpage.js  --standalone perpage",
     "prepublish": "npm run build",
-    "test": "jshint `npm run -s files`"
+    "test": "jshint `npm run -s files` && npm run build"
   },
   "devDependencies": {
     "babelify": "^6.1.2",
