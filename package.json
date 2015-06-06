@@ -1,6 +1,7 @@
 {
   "name": "perpage",
   "version": "0.0.0",
+  "main": "lib/perpage.js",
   "scripts": {
     "files": "find . -name '*.js' ! -path './node_modules/*' ! -path './bower_components/*' ! -path './lib/*'",
     "build": "mkdir -p lib && browserify src/perpage.js -t babelify --outfile lib/perpage.js  --standalone perpage",
