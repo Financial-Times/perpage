@@ -2,3 +2,11 @@ sudo: false
 language: node_js
 before_deploy:
 - npm-prepublish --verbose
+deploy:
+  provider: npm
+  email: matt@mattandre.ws
+  api_key:
+    secure: mAokkKF/BxR2/hctM/8OrQS9fk+qKBFAdl65QkZCiiqSdpgM5jMvEZmiwgQUSVlQ2GzvU0hNHt5SO+zrFimq9IUL6JPX9g6NINomoVmtJ4Y9IzVZyTQ/hYypbdQl5VWHa4TpH7thE8ByiKWxb6+gImO+NDsiA/k7BrsNnfHjrU+xe9JyrrNluLNzCx5LkWT/8EiFTM1IcNFFfu++/wpw7tbyjol72k80pk/5vNt9/3MsO3mWfV0FeU0mW5XhPX7YA9E5yqWwBhY2uzp75Y2S7npi4AYcHX1K4lk1iZvaaBjbnwNG2OkNEQ+H2RD6Py4Aegu6lBqt/GKSKFjSPVbJFDMXmng72Uan6UAr+q7e4TODZpwD0VIO6FPxYbIkBsF7/5rYbSj/5UVCAvPM3G0+CMo1i2XKAwOQtHmSR1ux3tlxPgR4snyEv/ptSFn1sI54qaHcdHXy40Uv+n+JO/NY5nZAOYlF3G+JYhffH+0XigHSvd4yRUJjlS1LYSg3dhjCilI/f/PnmvWhOhXAhAiAS6KhZdVoYGYauVcvVgt8amIXk2GSSwfd1MJK1IuImpjI4LKAhckd2CApIstgSn9YcNGloQhjaBUyRUspQQQkQ08VGXiQn3QHLIxmJ801qD8LMNlXclrxCHl6aygF5GOIxvhnkcf5A/NzzF+yEjBA/JM=
+  on:
+    tags: true
+    repo: matthew-andrews/perpage
