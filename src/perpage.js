@@ -1,7 +1,7 @@
 export class PerPage {
-	constructor(page = 1, count = 50) {
-		this.page = page;
-		this.count = count;
+	constructor(page, count) {
+		this.page = page ? parseInt(page, 10) : 1;
+		this.count = parseInt(count, 10) || 50;
 	}
 
 	get offset() {
