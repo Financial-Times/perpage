@@ -1,4 +1,4 @@
-class PerPage {
+export class PerPage {
 	constructor(page = 1, count = 50) {
 		this.page = page;
 		this.count = count;
