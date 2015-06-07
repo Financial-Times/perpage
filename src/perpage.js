@@ -15,7 +15,7 @@ export class PerPage {
 	}
 
 	get next() {
-		if (!this.total) {
+		if (this.total === undefined) {
 			throw new Error("Can't determine whether there should be a next page without Paginator#total set");
 		}
 		if (this.total > this.count * this.page) {
