@@ -1,17 +1,11 @@
 {
   "name": "perpage",
   "version": "0.0.0",
-  "main": "lib/perpage.js",
+  "main": "src/perpage.js",
   "scripts": {
-    "files": "find . -name '*.js' ! -path './node_modules/*' ! -path './bower_components/*' ! -path './lib/*'",
-    "build": "mkdir -p lib && browserify src/perpage.js -t babelify --outfile lib/perpage.js  --standalone perpage",
-    "prepublish": "npm run build",
-    "test": "jshint `npm run -s files` && npm run build"
+    "test": "jshint `find . -name '*.js' ! -path './node_modules/*' ! -path './bower_components/*' ! -path './lib/*'`"
   },
   "devDependencies": {
-    "babelify": "^6.1.2",
-    "browserify": "^10.2.3",
-    "jshint": "^2.8.0",
-    "npm-prepublish": "^1.2.0"
+    "jshint": "^2.8.0"
   }
 }
