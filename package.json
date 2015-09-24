@@ -1,6 +1,6 @@
 {
   "name": "perpage",
-  "version": "0.0.0",
+  "version": "1.0.10",
   "main": "src/perpage.js",
   "scripts": {
     "test": "jshint `find . -name '*.js' ! -path './node_modules/*' ! -path './bower_components/*' ! -path './lib/*'`"
