@@ -1,12 +1,2 @@
 sudo: false
 language: node_js
-before_deploy:
-- npm-prepublish --verbose
-deploy:
-  provider: npm
-  email: strategic.products@ft.com
-  api_key:
-    secure: 8RnWhPovPwE2gR7OLKwdDH4uFXV67/r6hUpckJXJedpaHWmzsOOGrJG0p833rnCoogc/BzSR4JY0Or7goU4OgYporpHpuynWodEUPZh9VgaxIzFI5DDff1Lb5ogbPeSvSIS+5gOlrtouhlMt6kK+3KDr2Uhdf5qxB87CwOvFYI/8RpeLwIKgi4NWQjmd1Zd7dMUaT0fZu2HiC86vIXA0jTPHB8kgL3Rki9nDxXLn9c7GF9rayrLr96N9vBn7PX6V3LqPx/YOqaZY8sCGB8e6DmX1tiHNE9UZEjdlymrk2cjCMJzc4ACf8krTC4D/DAraNodCmQh5U+zmqUv18JY+gqoHWE+ApK+iSKNjM1iFvPrR/LGCwzjidmSuACT7Vl6FRnKj+SMjkt4GMBZGWHGNfcNlgzt2wARaagKJT8JL8XhMCRSEbmpMVnZUgipnBBuCeqZ5TbTyUyFoAy0Hvw8CdHRGflTirHEuxdi3NyCz+0xZr008YPVaCq9fGDgQ6PDoDlFr5AZ5UyLmODOGWMHaw6R6pz2DrAgRukD1sCs8ueZTv+mS9lNWNNAf1M8QsPTxH0y3kcHq3FJ7rP0Nevvehauxd7gD62zu/XU+BAv+vdMy450LPPfXb1wLXoRfXrjkYS5Z0kgQtD1Uml8DNhNa/Y7UAI0UKPP8go4lto04ypg=
-  on:
-    tags: true
-    repo: Financial-Times/perpage
