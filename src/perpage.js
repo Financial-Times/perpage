@@ -1,4 +1,6 @@
-export class PerPage {
+'use strict';
+
+class PerPage {
 	constructor(page, count) {
 		this.page = page ? parseInt(page, 10) : 1;
 		this.count = parseInt(count, 10) || 50;
@@ -31,3 +33,5 @@ export class PerPage {
 		};
 	}
 }
+
+module.exports = PerPage;
