@@ -25,11 +25,24 @@ class PerPage {
 		}
 	}
 
+	get first() {
+		return 1;
+	}
+
+	get last() {
+		if (this.total === undefined) {
+			throw new Error("Can't determine what the last page number is without Paginator#total set");
+		}
+		return Math.floor(this.total / this.count) + 1;
+	}
+
 	toObject() {
 		return {
 			page: this.page,
 			previous: this.previous,
-			next: this.next
+			next: this.next,
+			first: this.first,
+			last: this.last
 		};
 	}
 }
