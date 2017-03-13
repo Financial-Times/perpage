@@ -42,7 +42,8 @@ class PerPage {
 			previous: this.previous,
 			next: this.next,
 			first: this.first,
-			last: this.last
+			last: this.last,
+			total: this.total
 		};
 	}
 }
